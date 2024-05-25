@@ -14,7 +14,7 @@ import pickle as pkl
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
-# rf2 = pickle.load(open('/mount/src/wqd7006_group6_insurancefraudprediction/rf2.pkl', 'rb'))
+# rf2 = pickle.load(open('rf2.pkl', 'rb'))
 with open('WQD7006_Group6_InsuranceFraudPrediction/rf2.pkl', 'rb') as f:
 	rf2 = pkl.load(f)
 
