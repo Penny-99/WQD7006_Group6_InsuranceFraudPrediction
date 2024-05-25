@@ -10,12 +10,8 @@ Original file is located at
 # Commented out IPython magic to ensure Python compatibility.
 import streamlit as st
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, accuracy_score
-from sklearn.model_selection import train_test_split
 import pickle
-from imblearn.combine import SMOTEENN
-from collections import Counter
+
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
