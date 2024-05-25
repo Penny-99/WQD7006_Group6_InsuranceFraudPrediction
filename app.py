@@ -15,8 +15,11 @@ import joblib
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
 # rf2 = pickle.load(open('rf2.pkl', 'rb'))
-with open('rft2.joblib', 'rb') as f:
-	rf2 = joblib.load(f)
+try:
+    rf2 = load('rft2.joblib')
+    logging.info("Model loaded successfully.")
+except Exception as e:
+    logging.error("Failed to load the model", exc_info=True)
 
 def main():
     st.set_page_config(layout="wide", page_title="Insurance Fraud Prediction App")
