@@ -15,7 +15,7 @@ import joblib
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
 # rf2 = pickle.load(open('rf2.pkl', 'rb'))
-with open('rf2.joblib', 'rb') as f:
+with open('rft2.joblib', 'rb') as f:
 	rf2 = joblib.load(f)
 
 def main():
