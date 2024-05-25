@@ -12,6 +12,9 @@ import streamlit as st
 import pandas as pd
 import pickle as pkl
 
+import os
+st.write("Current directory:", os.getcwd())
+st.write("List of files in current directory:", os.listdir('.'))
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
