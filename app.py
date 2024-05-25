@@ -15,7 +15,9 @@ import pickle
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
-rf2 = pickle.load(open('rf2.pkl', 'rb'))
+# rf2 = pickle.load(open('rf2.pkl', 'rb'))
+with open('model.pkl', 'rb') as f:
+	rf2 = pkl.load(f)
 
 def main():
     st.set_page_config(layout="wide", page_title="Insurance Fraud Prediction App")
