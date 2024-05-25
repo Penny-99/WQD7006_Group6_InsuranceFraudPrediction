@@ -11,6 +11,9 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import pickle
+import os
+st.write("Current directory:", os.getcwd())
+st.write("List of files in current directory:", os.listdir('.'))
 
 
 # # loading in the model to predict on the data
