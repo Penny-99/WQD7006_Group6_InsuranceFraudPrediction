@@ -10,13 +10,13 @@ Original file is located at
 # Commented out IPython magic to ensure Python compatibility.
 import streamlit as st
 import pandas as pd
-import pickle as pkl
+import joblib
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
 # rf2 = pickle.load(open('rf2.pkl', 'rb'))
-with open('rf2.pkl', 'rb') as f:
-	rf2 = pkl.load(f)
+with open('rf2.joblib', 'rb') as f:
+	rf2 = joblib.load(f)
 
 def main():
     st.set_page_config(layout="wide", page_title="Insurance Fraud Prediction App")
