@@ -11,23 +11,11 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import pickle
-import os
-st.write("Current directory:", os.getcwd())
-st.write("List of files in current directory:", os.listdir('.'))
 
 
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
-# rf2 = pickle.load(pickle_in)
-# import pickle
-
-try:
-    with open('rf2.pkl', 'rb') as pickle_in:
-        rf2 = pickle.load(pickle_in)
-except FileNotFoundError:
-    print("The file rf2.pkl was not found.")
-except Exception as e:
-    print(f"An error occurred: {e}")
+rf2 = pickle.load(pickle_in)
 
 def main():
     st.set_page_config(layout="wide", page_title="Insurance Fraud Prediction App")
