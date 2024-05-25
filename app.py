@@ -12,8 +12,6 @@ import streamlit as st
 import pandas as pd
 import pickle as pkl
 
-python -c "import sklearn; print(sklearn.__version__)"
-python -c "import numpy; print(numpy.__version__)"
 # # loading in the model to predict on the data
 # pickle_in = open('rf2.pkl', 'rb')
 # rf2 = pickle.load(open('rf2.pkl', 'rb'))
