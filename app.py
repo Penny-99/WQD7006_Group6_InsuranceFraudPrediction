@@ -16,7 +16,7 @@ import joblib
 # pickle_in = open('rf2.pkl', 'rb')
 # rf2 = pickle.load(open('rf2.pkl', 'rb'))
 
-rf2 = load('rft2.joblib')
+rf2 = joblib.load('rft2.joblib')
 
 
 def main():
